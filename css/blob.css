@@ -1,0 +1,87 @@
+.blob_container {
+	position: relative;
+}
+
+.blob {
+	width: 30vw;
+	height: 30vw;
+
+	z-index: -1;
+
+	position: absolute;
+
+	margin: auto;
+
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+#blob_1 {
+	top: -1vw;
+
+	animation: rotation 34s linear infinite;
+}
+
+#blob_2 {
+	top: 3vw;
+	right: 3vw;
+
+	animation: rotation 32s linear infinite reverse;
+}
+
+#blob_3 {
+	top: 3vw;
+	left: 3vw;
+
+	animation: rotation 30s linear infinite;
+}
+
+#blob_1_path {
+	fill: #00FFFF88;
+}
+
+#blob_2_path {
+	fill: #FF00FF88;
+}
+
+#blob_3_path {
+	fill: #FFFF0088;
+}
+
+@media (orientation: portrait) {
+	.blob_container {
+		position: initial;
+	}
+
+	.blob {
+		width: 80vw;
+		height: 80vw;
+
+		position: absolute;
+	}
+
+	#blob_1 {
+		top: -5vw;
+	}
+
+	#blob_2 {
+		top: 5vw;
+		right: 5vw;
+	}
+	
+	#blob_3 {
+		top: 5vw;
+		left: 5vw;
+	}
+}

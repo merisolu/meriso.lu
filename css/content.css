@@ -1,0 +1,61 @@
+#content {
+	margin-left: 2rem;
+	margin-right: 2rem;
+
+	height: 100%;
+
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+}
+
+@media (orientation: portrait) {
+	#content {
+		display: flex;
+	}
+
+	.text_container {
+		margin: auto;
+	}
+}
+
+.item {
+	align-self: center;
+
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+#title {
+	font-family: 'Nunito Sans Black', sans-serif;
+	font-weight: bolder;
+	font-size: 2.5rem;
+	line-height: 1em;
+
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+
+	color: #111111;
+}
+
+#subtitle {
+	font-weight: bolder;
+	font-size: 0.85rem;
+
+	margin-top: 0.75rem;
+	margin-bottom: 0.25rem;
+
+	text-transform: uppercase;
+
+	color: #111111;
+}
+
+#description {
+	align-self: baseline;
+
+	color: #111111;
+}
+
+#notice {
+	font-size: 0.75rem;
+}

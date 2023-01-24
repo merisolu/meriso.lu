@@ -1,0 +1,34 @@
+.link {
+	display: block;
+
+	margin-bottom: 0.5rem;
+
+	font-size: 1rem;
+}
+
+.link_icon {
+	display: inline-block;
+
+	width: 2em;
+	height: 2em;
+
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.link_name {
+	display: inline-block;
+}
+
+#contact {
+	display: flex;
+	float: right;
+}
+
+#contact:before {
+	content: "\0068\0065\006C\006C\006F\0040\006D\0065";
+}
+
+#contact:after {
+	content: "\0072\0069\0073\006F\002E\006C\0075";
+}
